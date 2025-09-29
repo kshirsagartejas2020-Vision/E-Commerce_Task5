@@ -1,37 +1,51 @@
-📊 Task 4: Aggregate Functions and Grouping
+# 🔗 Task 5: SQL Joins (Inner, Left, Right, Full)
 
-📌 Overview
+## 📌 Overview
+This task demonstrates how to use different types of **SQL JOINs** to combine and analyze data across multiple tables in the `EcommerceDB`.  
+It covers `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, and `FULL OUTER JOIN` with practical use cases from Customers, Orders, Products, and Reviews tables.
 
-This task demonstrates the use of aggregate functions and GROUP BY to summarize and analyze tabular data.
-It covers functions like SUM, COUNT, AVG, MIN, MAX along with filtering grouped data using HAVING.
+---
 
-🎯 Objectives
+## 🎯 Objectives
+- Learn how to combine data from related tables  
+- Understand the differences between INNER, LEFT, RIGHT, and FULL JOIN  
+- Handle missing data using outer joins  
+- Write multi-table join queries for real-world reporting  
 
-Apply aggregate functions on numeric columns.
+---
 
-Categorize data using GROUP BY.
+## 🛠️ Features
+✅ `INNER JOIN` → Get only matching records (e.g., Customers with Orders)  
+✅ `LEFT JOIN` → Retrieve all records from one table, even if no match exists  
+✅ `RIGHT JOIN` → Retrieve all records from the second table, even without matches  
+✅ `FULL OUTER JOIN` → Combine results from both tables completely  
+✅ Multi-table joins to connect Customers → Orders → Products  
 
-Filter summarized results using HAVING.
+---
 
+## 📊 Outcomes
+- Ability to merge data from multiple related tables  
+- Understand how join types affect results when data is missing  
+- Write detailed queries for reports like:  
+  - All customers and their orders  
+  - Orders with product details  
+  - Customers without orders  
+  - Products not yet purchased  
 
-🛠️ Features
+---
 
-✅ Aggregate functions: SUM, COUNT, AVG, MIN, MAX
-✅ Grouping with GROUP BY
-✅ Filtering grouped results with HAVING
-✅ Support for multiple columns in grouping
-✅ Real-world use cases like analyzing sales, customer orders, and salaries
+## 📝 Example Queries
+- Get **Orders with Customer info** using `INNER JOIN`  
+- List **all Customers and their Orders** using `LEFT JOIN`  
+- Show **all Orders including unmatched Customers** using `RIGHT JOIN`  
+- Combine **Customers and Orders fully** using `FULL OUTER JOIN`  
+- Join **Customers + Orders + Products** for detailed sales reports  
 
+---
 
-📊 Outcomes
-
-Ability to summarize and analyze tabular data.
-
-Extract business insights such as top customers, best-selling products, revenue trends.
-
-Practice with HAVING vs WHERE and multiple column grouping.
-
-
-🔑 Key Concepts
-
-Aggregation, Grouping, Filtering with HAVING
+## 🔑 Key Concepts
+- `INNER JOIN`  
+- `LEFT JOIN`  
+- `RIGHT JOIN`  
+- `FULL OUTER JOIN`  
+- Multi-table joins  
